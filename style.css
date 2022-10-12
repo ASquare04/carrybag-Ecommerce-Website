@@ -405,12 +405,12 @@ h3 {
     #alert{
       font-size: 12px;
     }
+    #mobiles,#laptop,#tablet,#access{
+      font-size: 26px;
+    }
     #More{
       font-weight: 400;
       font-size: 14px;
-    }
-    #mobiles,#laptop,#tablet,#access{
-      font-size: 26px;
     }
     #card-imgs{
       width: 75%;
