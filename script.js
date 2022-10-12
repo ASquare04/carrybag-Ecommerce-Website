@@ -1,4 +1,4 @@
-// alert("Shipping is not currently available for North-Eastern states")
+alert("Shipping is not currently available for North-Eastern states")
 let mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {scrollFunction()};
