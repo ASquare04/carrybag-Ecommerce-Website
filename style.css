@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+
+* {
+  scroll-behavior: smooth;
+  transition: .1s;
+  background-color: transparent;
+  font-family: 'Reem Kufi Fun';
+  margin: 0;
+  padding: 0;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#nav_item {
+  color: white;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+#navbar {
+  background-color: rgb(65, 60, 60);
+  box-shadow: 6px 12px 17px rgba(23, 22, 20, 0.472);
+
+}
+
+#logo {
+  color: gold;
+  font-weight: 700;
+}
+
+#dropdown {
+  background-color: rgb(89, 86, 86);
+  opacity: 0.95;
+  color: whitesmoke;
+}
+
+#srch-icon {
+  background-image: linear-gradient(to right top, #75b1a3, #00a9bf, #0099f2, #0079ff, #a512eb);
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  display: block;
+  border-radius: 0px 12px 12px 0px;
+}
+
+#srch {
+  border-radius: 12px 0px 0px 12px;
+
+}
+
+#srch:focus {
+  border-color: #607b41;
+  box-shadow: 1px 1px 1px #19c8d2, 0 0 6px #115483;
+}
+
+#magnify:hover {
+  transform: rotate(360deg);
+  transition: .5s;
+}
+
+#cart {
+  background-color: transparent;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  display: block;
+  border: none;
+}
+
+#cart:hover {
+  color: white;
+  text-decoration: none;
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+
+#account {
+  background-color: transparent;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  display: block;
+  border: none;
+}
+
+#acc {
+  color: white;
+}
+
+#account:hover {
+  background-position: right center;
+  /* change the direction of the color here */
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+
+#login:hover {
+  transition: .5s;
+  transform: scale(1.05);
+}
+
+#signup:hover {
+  transition: .5s;
+  transform: scale(1.05);
+}
+
+#acc-modal {
+  border-radius: 14px;
+}
+
+#cart-modal {
+  border-radius: 14px;
+}
+
+#badge {
+  background-image: linear-gradient(to right, #30ff00, #bbd100, #f49b00, #ff5b0f, #ff0057);
+}
+
+#alert {
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.alert {
+  box-shadow: 1px 2px 3px rgba(133, 131, 127, 0.472);
+}
+
+#tnc-content {
+  font-size: 12px;
+  justify-content: center;
+}
+
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-2 {
+  background-image: url('Imgs/beyond.png');
+  min-height: 620px;
+}
+
+.bgimg-3 {
+  background-image: url("Imgs/big.png");
+  min-height: 760px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.caption span.border {
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 247, 247);
+}
+
+#context {
+  font-size: xx-large;
+  text-align: center;
+  font: 20px "Lato", sans-serif;
+  letter-spacing: 5px;
+}
+
+#More {
+  border-radius: 90px;
+  font-weight: 500;
+  justify-content: center;
+}
+
+/* #offer-cover{
+    background-image: url(Imgs/cover2.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+} */
+
+#offer-head {
+  background-image: linear-gradient(to left, #585d65, #3a7b8c, #009a88, #6ab158, #d6b620);
+  color: white;
+}
+
+#offer-content {
+  background-color: gainsboro;
+}
+
+#offer-head2 {
+  background-image: linear-gradient(to right, #585d65, #3a7b8c, #009a88, #6ab158, #d6b620);
+  color: white;
+}
+
+#offer-footer {
+  background-color: whitesmoke;
+}
+
+#canvas {
+  background-color: gainsboro;
+}
+
+#canvas-head {
+  background-color: rgb(36, 88, 162);
+  color: white;
+  background-image: url(https://images3.programmerclick.com/713/e1/e14db63b71bd11eee041a56700910579.gif) !important;
+}
+
+#canvas {
+  font-size: 15px;
+}
+
+.btn-close {
+  color: white;
+}
+
+#running {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #4e3629;
+  font-size: large;
+}
+
+
+#coupon {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+#card-mob {
+  background-image: url(Imgs/card-bg8.jpg)
+}
+
+#card-lap {
+  background-image: url(Imgs/card-bg6.jpg);
+}
+
+#card-tab {
+  background-image: url(Imgs/card-bg5.jpg);
+}
+
+#card-acc {
+  background-image: url(Imgs/card-bg3.jpg);
+}
+
+#cards-body {
+  color: rgb(66, 64, 58);
+  background-color: rgb(255, 255, 255);
+}
+
+.card-text {
+  font-weight: 500;
+}
+
+
+#buyNow {
+  font-weight: 400;
+  color: white;
+
+}
+
+#card-imgs:hover {
+  cursor: pointer;
+  transition: 1s;
+}
+
+#exploreMore {
+  border-radius: 60px;
+  font-weight: 300;
+
+}
+
+#exploreMore:hover {
+  color: whitesmoke;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 96px;
+  margin-bottom: 46px;
+  left: 0;
+  right: 0;
+  color: whitesmoke;
+  background-image: linear-gradient(to top, #8464e6, #6a59d0, #514eba, #3743a4, #1c388e);
+  opacity: 0.9;
+  overflow: hidden;
+  width: 0;
+  height: 64%;
+  transition: .5s ease;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.card:hover .overlay {
+  width: 100%;
+  cursor: pointer;
+}
+
+.text {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.specs {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#headingTwo{
+  text-align: center;
+  background-image: url(Imgs/div1.png);
+  text-transform: uppercase;
+  color: rgb(152, 85, 152);
+  
+}
+
+#mobiles,
+#laptop,
+#tablet,
+#access {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font: "Lato", sans-serif;
+  color:#423c33;
+}
+
+.img-fluid {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+#twitter{
+  color: rgb(18, 146, 215);
+}
+#facebook{
+  color: rgb(9, 82, 230);
+}
+#insta{
+  color: rgb(179, 53, 8);
+}
+#linkedin{
+  color: #1e1ebd;
+}
+
+#copyright{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#myBtn {
+  display: none;
+  position: sticky;
+  bottom: 20px;
+  float: right;
+  right: 30px;
+  z-index: 99;
+  background-color: rgb(155, 155, 155);
+  color: rgb(243, 246, 247);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50px;
+  font-size: 24px;
+  transition: .3s ease;
+}
+
+
+@media (max-width:550px){
+    #offer-content{
+        font-size: 12px;
+    }
+    #context{
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    .alert{
+        font-size: 10px;
+    }
+    #alert{
+      font-size: 12px;
+    }
+    #More{
+      font-weight: 400;
+      font-size: 14px;
+    }
+    #card-imgs{
+      width: 75%;
+      height: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .overlay{
+      height: 57%;
+    }
+    footer{
+      font-size: 14px;
+    }
+
+}
+
+@media (max-width:1275px) {
+  .bgimg-2{
+    background-attachment: scroll;
+    background-image: url(Imgs/banner-bg.jpg);
+    min-height: 350px;
+  }
+  .bgimg-3{
+    background-attachment: scroll;
+    background-image: url(Imgs/banner-bg4.jpg);
+    min-height: 350px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(235, 201, 8, 0.983);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(255, 166, 2);
+}

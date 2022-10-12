@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Imgs/fav.PNG" type="image/x-icon">
+    <title>carrybag | Home</title>
+  </head>
+  <body>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Nav Bar Begins -->
+    <div class="container-lg-fluid">
+      <nav class="navbar fixed-top navbar-expand-lg"  id="navbar"  >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="38" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+            </svg>
+            &nbsp carrybag
+          </a>
+          <button class="navbar-toggler" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="toggle" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link me-2" aria-current="page" href="#mobiles" id = "nav_item">Mobiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#laptop" id = "nav_item" >Laptops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#tablet" id = "nav_item">Tablet</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id = "nav_item" >
+                Accessories
+                </a>
+                <ul class="dropdown-menu" id="dropdown">
+                  <li><a class="dropdown-item" id="dropdown" href="#access">Smart Watches</a></li>
+                  <li><a class="dropdown-item" id="dropdown" href="#access">Earphones</a></li>
+                  <li><a class="dropdown-item" id="dropdown" href="#">Power Banks</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control w-100" type="search" placeholder="Search Product" aria-label="Search" id="srch">                   
+              <button class="btn btn-light w-25 me-4" id="srch-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"  class="bi bi-search" id="magnify" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+              <button type="button" style="opacity: 0.85;" title="Cart" class="btn btn-light me-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" >
+                </svg>
+              </button>
+              <button type="button" style="opacity: 0.85;" class="btn btn-light   me-sm-3 m-0"  id="account" title="Account">
+                <a href="C:\Users\Anmol Arora\Documents\UDEMY\Website\login.html" target="_blank" id="acc">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+                </a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav Bar Ends -->
+      <!-- Cart Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" >
+          <div class="modal-content" id="cart-modal">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                <a class="navbar-brand" href="#" id="logo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                  </svg>
+                </a>
+                &nbsp;Shopping Cart 
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer" style="background-color:whitesmoke; justify-content: left; letter-spacing: 1px;">
+              You&nbsp; Cart&nbsp; Is&nbsp; Empty! 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Alert Modal -->
+      <div class="container-lg-fluid">
+        <br><br>
+        <div class="alert alert-warning alert-dismissible fade show text-center mt-3" role="alert">
+          <span class="badge bg-danger rounded-pill" id="badge">Soon</span>
+          <strong>Big Diwali Sale</strong>  20%  Off  On  Accessories  |  Additional  10%  Card  Discount
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalTnC" id="alert" title="Offer Terms">TnC Apply</a>
+          <div class="modal fade" id="modalTnC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Offer Terms</h2>
+                </div>
+                <div class="modal-body text-center" id="tnc-content">
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                  <hr>
+                  carrybag - all terms and basic conditions to be mentioned here <br>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-outline-primary w-25" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+      <!-- Carousel -->
+      <div class="container-lg-fluid">
+        <div class="container-lg-fluid" >
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="cursor: pointer;">
+              <div class="carousel-item active" data-bs-interval="3500">
+                <img src="Imgs/carousel1.png" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src= "Imgs/carousel4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="Imgs/one Stop shop (2).png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" title="Previous Slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" title="Nex Slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- New Launch Section -->
+    <div class="container-lg-fluid">
+      <div style="background-color: rgb(141, 93, 200); text-align:center;padding:20px 20px;text-align: justify;">
+        <h3 style="text-align:center;">Newly Launched</h3>
+      </div>
+      <div class="bgimg-2" >
+        <div class="caption">
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="color:#ddd;background-image: linear-gradient(to right, #421454, #381c4f, #302148, #2b2440, #282636, #292738, #29293b, #2a2a3d, #2d2b4d, #322c5c, #392b6b, #432879);;text-align:center;padding:30px 80px;text-align: center;">
+          <p id="context">A magical new way to interact with iPhone 14</p>
+          <button class="btn btn-outline-light" type="button" id = "More">Learn More</button>
+        </div>
+      </div>
+      <div class="bgimg-3">
+        <div class="caption">
+        </div>
+      </div>
+      <!-- Card I -->
+      <div class="container-lg-fluid" style="background-image: url(Imgs/div1.png);">
+        <div class="container">
+          <br><br>
+          <div class="container text-center">
+            <marquee id="running" scrollamount="16" onmouseover="this.stop();" onmouseout="this.start();"><strong>| carrybag Festive |  Get <a href="#access">Galaxy Buds Pro</a> For Just Rs 5000 With Purchase Of Samsung S22 Ultra (Any Variant)... Hurry Up! Offer Ends Soon </strong> </marquee>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="shadow p-2 mb-4 bg-body rounded">
+                  <div class="card text-center">
+                    <div class="card-header" id="offer-head">
+                      Offer Zone
+                    </div>
+                    <div class="card-body"id="offer-content">
+                      <h5 class="card-title">Prepaid Payment Offer !</h5>
+                      <p class="card-text">Coupon worth 3000 INR on payment of 30000 INR & above. </p>
+                      <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Learn More</button>
+                    </div>
+                    <div class="card-footer text-muted" id = "offer-footer">Updated 2 Days Ago</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Offers Off-Canvas -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header" id="canvas-head">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offer Zone</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-start" id="canvas">
+                  <h5>carrybag Festive Days</h5>
+                  <p>Get 2 Myntra Voucher Worth 1499/- On Payment Of 30000 & Above With Axis Credit/Debit Card </p>
+                  <h5>Goodies Worth 10K Plus</h5>
+                  <p>Stand A Chance To Win Apple AirPods (2nd Gen). Spend 1,00,000 Above To Be A Part of Contest.</p>
+                  <h5>Spin The Wheel</h5>
+                  <p>Win Coupon Worth 200/- 500/- 1000/- 2000/-</p>
+                  <div class="text-muted" >#Offers are subjected only once per user Account.</div>
+                  <div class="text-muted" >#Myntra Voucher can be redeemed at <a href="https://www.myntra.com/" target="_blank"> here</a> only.</div>
+                  <div class="text-muted" >#All coupons are valid till 31st December 2022.</div>
+                  <br><br>
+                  <h6>For More Offers Stay Tuned </h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-label="Animated   striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%" title="Offers Loading.."></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card II -->
+              <div class="col-md-6 mt-3 mt-md-0">
+                <div class="shadow p-2 mb-4 bg-body rounded">
+                  <div class="card text-center">
+                    <div class="card-header" id="offer-head2">
+                      New Release
+                    </div>
+                    <div class="card-body" id="offer-content">
+                      <h5 class="card-title">iPhone 14 Series  </h5>
+                      <p class="card-text">The all new Dynamic Island.. this time things are different.</p>
+                      <a href="https://www.apple.com/in/iphone-14-pro" target="_blank" class="btn btn-outline-primary">Check Out</a>
+                    </div>
+                    <div class="card-footer text-muted" id = offer-footer>Price Starts 79,900/-</div>
+                  </div>
+                </div>
+              </div>
+              <img src="Imgs/Coupon.png" alt="" srcset="" id="coupon" style="width: 80%; align-content: center;">
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Section -->
+        <div class="container-lg-fluid" style="background-image: url(Imgs/div1.png);">
+          <div class="container mt-5">
+            <div class="container text-center">
+              <br>
+              <h1 class="display-4" id="mobiles">Exclusive<span style="color: purple;">Mobiles</span></h1>
+            </div>
+          </div>
+          <div class="container mt-5" id="m1">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-4 ">
+              <div class="col d-flex justify-content-center">
+                <div class="card"  id="card-mob"  style="width: 15rem;">
+                  <img src="Imgs/13pro.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                  <div class="overlay">
+                    <div class="text">Specifications</div>
+                    <div class="specs">
+                      <p>Processor :</p>
+                      <p>Display :</p>
+                      <p>Camera :</p>
+                      <p>Battery :</p>
+                    </div>
+                  </div>
+                  <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;" >
+                    <h5 class="card-title">iPhone 13 Pro</h5>
+                    <p class="card-text">&#8377; 69,900/-</p>
+                    <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                    <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <div class="card"  id="card-mob"  style="width: 15rem;">
+                  <img src="Imgs/iphone13pro.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                  <div class="overlay">
+                    <div class="text">Specifications</div>
+                    <div class="specs">
+                      <p>Processor :</p>
+                      <p>Display :</p>
+                      <p>Camera :</p>
+                      <p>Battery :</p>
+                    </div>
+                  </div>
+                  <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                    <h5 class="card-title">iPhone 13 Pro Max</h5>
+                    <p class="card-text">&#8377; 1,29,900/-</p>
+                    <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                    <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <div class="card"  id="card-mob"  style="width: 15rem;">
+                  <img src="Imgs/i14ProMax.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                  <div class="overlay">
+                    <div class="text">Specifications</div>
+                    <div class="specs">
+                      <p>Processor :</p>
+                      <p>Display :</p>
+                      <p>Camera :</p>
+                      <p>Battery :</p>
+                    </div>
+                  </div>
+                  <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                    <h5 class="card-title">iPhone 14 Pro Max</h5>
+                    <p class="card-text">&#8377; 1.39,900/-</p>
+                    <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                    <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <div class="card"  id="card-mob"  style="width: 15rem;">
+                  <img src="Imgs/14plus.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                  <div class="overlay">
+                    <div class="text">Specifications</div>
+                    <div class="specs">
+                      <p>Processor :</p>
+                      <p>Display :</p>
+                      <p>Camera :</p>
+                      <p>Battery :</p>
+                    </div>
+                  </div>
+                  <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                    <h5 class="card-title">iPhone 14 Plus</h5>
+                    <p class="card-text">&#8377; 69,900/-</p>
+                    <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                    <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto" >
+                <button class="btn btn-outline-success" type="button" id = "exploreMore">
+                  Explore More&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush mt-4" id="accordionExample" >
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo" title= "Click To Expand">
+                <p> Android Section</p>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: transparent; height: 5px;">
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body"  style="background-image: url(Imgs/div1.png);">
+                  <div class="container mt-5" >
+                    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-4 ">
+                      <div class="col d-flex justify-content-center">
+                        <div class="card"  id="card-mob"  style="width: 15rem;">
+                          <img src="Imgs/s22_ultra_productkv_burgundy_mo-removebg-preview.png" class="card-img-top" alt="..."  id="card-imgs" height="250px">
+                          <div class="overlay">
+                            <div class="text">Specifications</div>
+                            <div class="specs">
+                              <p>Processor :</p>
+                              <p>Display :</p>
+                              <p>Camera :</p>
+                              <p>Battery :</p>
+                            </div>
+                          </div>
+                          <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                            <h5 class="card-title">Samsung S22 Ultra</h5>
+                            <p class="card-text">&#8377; 1,09,999/-</p>
+                            <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                            <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col d-flex justify-content-center">
+                        <div class="card"  id="card-mob"  style="width: 15rem;">
+                          <img src="Imgs/Samsung-Galaxy-S21-FE-1-removebg-preview.png" class="card-img-top"  id="card-imgs" alt="..." height="250px">
+                          <div class="overlay">
+                            <div class="text">Specifications</div>
+                            <div class="specs">
+                              <p>Processor :</p>
+                              <p>Display :</p>
+                              <p>Camera :</p>
+                              <p>Battery :</p>
+                            </div>
+                          </div>
+                          <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                            <h5 class="card-title">Samsung S21 FE</h5>
+                            <p class="card-text">&#8377; 34,999/-</p>
+                            <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                            <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col d-flex justify-content-center">
+                        <div class="card"  id="card-mob"  style="width: 15rem;">
+                          <img src="Imgs/zflip3_colorselection_lavender_mo-removebg-preview.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                          <div class="overlay">
+                            <div class="text">Specifications</div>
+                            <div class="specs">
+                              <p>Processor :</p>
+                              <p>Display :</p>
+                              <p>Camera :</p>
+                              <p>Battery :</p>
+                            </div>
+                          </div>
+                          <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                            <h5 class="card-title">Samsung Z-Flip 3</h5>
+                            <p class="card-text">&#8377; 84,999/-</p>
+                            <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                            <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col d-flex justify-content-center">
+                        <div class="card"  id="card-mob"  style="width: 15rem;">
+                          <img src="Imgs/71lHXlQC2yL._SL1500_-removebg-preview.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                          <div class="overlay">
+                            <div class="text">Specifications</div>
+                            <div class="specs">
+                              <p>Processor :</p>
+                              <p>Display :</p>
+                              <p>Camera :</p>
+                              <p>Battery :</p>
+                            </div>
+                          </div>
+                          <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                            <h5 class="card-title">Samsung S22 Plus</h5>
+                            <p class="card-text">&#8377; 69,999/-</p>
+                            <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                            <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-6 mx-auto" >
+                        <button class="btn btn-outline-success" type="button" id = "exploreMore">
+                          Explore More&nbsp;
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Laptop Section -->
+          <div class="container-lg-fluid"  style="background-image: url(Imgs/div1.png);">
+            <div class="container mt-4">
+              <div class="container text-center">
+                <h1 class="display-4" id="laptop">Splendid<span style="color: rgb(11, 111, 74);">Laptops</span></h1>
+              </div>
+            </div>
+            <div class="container mt-5">
+              <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-4 ">
+                <div class="col d-flex justify-content-center">
+                  <div class="card" id="card-lap"  style="width: 15rem;">
+                    <img src="Imgs/airm1.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">MacBook Air M1</h5>
+                      <p class="card-text">&#8377; 92,990/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-lap"  style="width: 15rem;">
+                    <img src="Imgs/airpro.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">MacBook Air Pro</h5>
+                      <p class="card-text">&#8377; 2,05,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-lap"  style="width: 15rem;">
+                    <img src="Imgs/rog.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">Rog 5</h5>
+                      <p class="card-text">&#8377; 79,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-lap"  style="width: 15rem;">
+                    <img src="Imgs/asus.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">VivoBook Flip</h5>
+                      <p class="card-text">&#8377; 48,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-outline-success" type="button" id = "exploreMore">
+                    Explore More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tablet Section -->
+          <div class="container-lg-fluid" style="background-image: url(Imgs/div1.png);" >
+            <div class="container mt-4">
+              <div class="container text-center">
+                <h1 class="display-4" id="tablet">Tremendeous <span style="color: rgb(26, 195, 221);">Tabs</span></h1>
+              </div>
+            </div>
+            <div class="container mt-5">
+              <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-4 ">
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-tab"  style="width: 15rem;">
+                    <img src="Imgs/ipadpro.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">iPad Pro 2022</h5>
+                      <p class="card-text">&#8377; 1,13,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-tab"  style="width: 15rem;">
+                    <img src="Imgs/iPad-Pro-11-2021-Silver-removebg-preview.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">iPad Pro</h5>
+                      <p class="card-text">&#8377; 71,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-tab"  style="width: 15rem;">
+                    <img src="Imgs/c21447c9dd963e3703541bd25a56817a-removebg-preview.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">A7 lite</h5>
+                      <p class="card-text">&#8377; 14,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-tab"  style="width: 15rem;">
+                    <img src="Imgs/IMG_20220920_144036-removebg-preview.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Processor :</p>
+                        <p>Display :</p>
+                        <p>Camera :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">S8 Ultra</h5>
+                      <p class="card-text">&#8377; 1,14,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-outline-success" type="button" id = "exploreMore">
+                    Explore More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Accessories Section -->
+          <div class="container-lg-fluid" style="background-image: url(Imgs/div1.png);">
+            <div class="container mt-4">
+              <div class="container  text-center">
+                <h1 class="display-4" id="access">Awful <span style="color: rgb(225, 109, 15);">Accessories</span></h1>
+              </div>
+            </div>
+            <div class="container mt-5">
+              <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-4 ">
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-acc"  style="width: 15rem;">
+                    <img src="Imgs/iwatch.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Display :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">Apple Series 7</h5>
+                      <p class="card-text">&#8377; 47,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-acc"  style="width: 15rem;">
+                    <img src="Imgs/w5.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Display :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">Samsung Watch 5</h5>
+                      <p class="card-text">&#8377; 27,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-acc"  style="width: 15rem;">
+                    <img src="Imgs/air.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Bass :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title">Airpods 3</h5>
+                      <p class="card-text">&#8377; 20,900/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <div class="card"  id="card-acc"  style="width: 15rem;">
+                    <img src="Imgs/shead.png" class="card-img-top" alt="..." id="card-imgs" height="250px">
+                    <div class="overlay">
+                      <div class="text">Specifications</div>
+                      <div class="specs">
+                        <p>Bass :</p>
+                        <p>Battery :</p>
+                      </div>
+                    </div>
+                    <div class="card-body" id = "cards-body" style="width: 15rem; height: 9rem;">
+                      <h5 class="card-title" id="buds">Galaxy Buds Pro</h5>
+                      <p class="card-text">&#8377; 12,990/-</p>
+                      <a href="##" class="btn btn-outline-primary" id ="addCart" >Add to cart</a>
+                      <a href="#" class="btn btn-warning m-2" id = "buyNow" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-outline-success" type="button" id = "exploreMore">
+                    Explore More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </button>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Login Message Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Action Required</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  You are required to Login first.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success" id="loginNow">Login Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="Imgs/know More.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-lg-2 offset-1 col-4">
+            <h5>Serives</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">About Us</a></li>
+              <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">Policy</a></li>
+              <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">FaQs</a></li>
+              <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">Support</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-5">
+            <h5>Reach Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:+911800 0401 1234" class="nav-link p-0 text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  &nbsp;1800 1234 0401
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="tel:+911800 0401 1234" class="nav-link p-0 text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  &nbsp;1800 5678 2002
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:heymailme04@gmail.com" class="nav-link p-0 text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                  &nbsp;support@cb.in
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#!" class="nav-link p-0 text-muted">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                  &nbsp;Magical Planet
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 offset-1 col-8 mt-lg-0 mt-3" id="newsLetter">
+            <form>
+              <h5>Subscribe to our Newsletter</h5>
+              <p>Monthly exciting stuff from us.</p>
+              <div class="d-flex w-100  gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+            <a class="btn btn-social-icon btn-twitter mt-2">
+            <span class="fa fa-twitter fa-lg" id="twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-facebook mt-2">
+            <span class="fa fa-facebook fa-lg" id="facebook"></span>
+            </a>
+            <a class="btn btn-social-icon btn-instagram mt-2">
+            <span class="fa fa-instagram fa-lg" id="insta"></span>
+            </a>
+            <a class="btn btn-social-icon btn-linkedin mt-2">
+            <span class="fa fa-linkedin fa-lg" id="linkedin"></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted mt-3">
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 
+        <a class="text-reset fw-bold" href="#">carrybag</a> &nbsp;All Rights Reserved.
+      </div>
+    </footer>
+    <!-- Footer -->
+    <i class="fa fa-arrow-up" aria-hidden="true" onclick="topFunction()" id="myBtn"></i>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <!-- local JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
