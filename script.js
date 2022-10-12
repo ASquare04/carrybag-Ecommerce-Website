@@ -17,5 +17,5 @@ function topFunction() {
 }
 
 document.getElementById("loginNow").onclick = function(){
-  window.location.href = "file:///C:/Users/Anmol%20Arora/Documents/UDEMY/Website/login.html";
+  window.location.href = "https://asquare04.github.io/carrybag-Ecommerce-Website/login.html";
 };
